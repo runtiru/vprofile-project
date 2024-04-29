@@ -32,8 +32,8 @@ services:
     container_name: vproapp
     ports:
       - "8080:8080"
-    # volumes:
-    #   - vproapp:/usr/local/tomcat/webapps
+    volumes:
+      - vproapp:/usr/local/tomcat/webapps
 
   vproweb:
     build:
